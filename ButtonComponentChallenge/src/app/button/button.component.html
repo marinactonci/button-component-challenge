@@ -1,0 +1,13 @@
+<button class="btn" 
+        [ngClass]="{'outline': variant === 'outline', 'text': variant === 'text', 
+        'primary': color === 'primary', 'secondary': color === 'secondary', 
+        'danger': color === 'danger', 'sm': size === 'sm', 'md': size === 'md',
+        'lg': size === 'lg'}">
+    <i *ngIf="startIcon.length" class="material-icons-round">
+        {{startIcon}}
+    </i>
+    <ng-content></ng-content>
+    <i *ngIf="endIcon.length" class="material-icons-round">
+        {{endIcon}}
+    </i>
+</button>

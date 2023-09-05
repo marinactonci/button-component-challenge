@@ -1,0 +1,114 @@
+<section>
+  <div class="sidebar">
+    <h1 href="/" class="title"><span>Dev</span>challenges.io</h1>
+    <div class="links">
+      <button class="link" [ngClass]="{'active': activeView === 'colors'}" (click)="activeView = 'colors'">Colors</button>
+      <button class="link" [ngClass]="{'active': activeView === 'typography'}" (click)="activeView = 'typography'">Typography</button>
+      <button class="link" [ngClass]="{'active': activeView === 'spaces'}" (click)="activeView = 'spaces'">Spaces</button>
+      <button class="link" [ngClass]="{'active': activeView === 'buttons'}" (click)="activeView = 'buttons'">Buttons</button>
+      <button class="link" [ngClass]="{'active': activeView === 'inputs'}" (click)="activeView = 'inputs'">Inputs</button>
+      <button class="link" [ngClass]="{'active': activeView === 'grid'}" (click)="activeView = 'grid'">Grid</button>
+    </div>
+  </div>
+  <div class="content-container">
+    <div class="content" *ngIf="activeView === 'buttons' || activeView === 'inputs'; else noView">
+      <div *ngIf="activeView === 'buttons'">
+        <h1 class="title">Buttons</h1>
+        <div class="buttons">
+          <div class="btn-container">
+            <div class="btn">
+              <label for="">&lt;Button /&gt;</label>
+              <app-button>Default</app-button>
+            </div>
+          </div>
+
+          <div class="btn-container">
+            <div class="btn">
+              <label for="">&lt;Button variant="outline" /&gt;</label>
+              <app-button variant="outline">Default</app-button>
+            </div>
+          </div>
+
+          <div class="btn-container">
+            <div class="btn">
+              <label for="">&lt;Button variant="text" /&gt;</label>
+              <app-button variant="text">Default</app-button>
+            </div>
+          </div>
+
+          <div class="btn-container">
+            <div class="btn">
+              <label for="">&lt;Button disableShadow /&gt;</label>
+              <app-button disableShadow color="primary">Default</app-button>
+            </div>
+          </div>
+
+          <div class="btn-container">
+            <div class="btn">
+              <label for="">&lt;Button disabled /&gt;</label>
+              <app-button disabled>Disabled</app-button>
+            </div>
+            <div class="btn">
+              <label for="">&lt;Button variant="text" disabled /&gt;</label>
+              <app-button variant="text" disabled>Disabled</app-button>
+            </div>
+          </div>
+
+          <div class="btn-container">
+            <div class="btn">
+              <label for="">&lt;Button disabled /&gt;</label>
+              <app-button color="primary" startIcon="add_shopping_cart">Default</app-button>
+            </div>
+            <div class="btn">
+              <label for="">&lt;Button variant="text" disabled /&gt;</label>
+              <app-button color="primary" endIcon="add_shopping_cart">Default</app-button>
+            </div>
+          </div>
+
+          <div class="btn-container">
+            <div class="btn">
+              <label for="">&lt;Button size="sm" /&gt;</label>
+              <app-button color="primary" size="sm">Default</app-button>
+            </div>
+            <div class="btn">
+              <label for="">&lt;Button size="md" /&gt;</label>
+              <app-button color="primary" size="md">Default</app-button>
+            </div>
+            <div class="btn">
+              <label for="">&lt;Button size="lg" /&gt;</label>
+              <app-button color="primary" size="lg">Default</app-button>
+            </div>
+          </div>
+
+          <div class="btn-container">
+            <div class="btn">
+              <label for="">&lt;Button color="default" /&gt;</label>
+              <app-button color="default">Default</app-button>
+            </div>
+            <div class="btn">
+              <label for="">&lt;Button color="primary" /&gt;</label>
+              <app-button color="primary">Default</app-button>
+            </div>
+            <div class="btn">
+              <label for="">&lt;Button color="secondary" /&gt;</label>
+              <app-button color="secondary">Secondary</app-button>
+            </div>
+            <div class="btn">
+              <label for="">&lt;Button color="danger" /&gt;</label>
+              <app-button color="danger">Danger</app-button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="activeView === 'inputs'">
+
+      </div>
+    </div>
+    <p class="icons">Icons: https://material.io/resources/icons/?style=round</p>
+    <p class="created-by">created by <a href="https://github.com/marinactonci">marinactonci</a> - devChallenges.io</p>
+  </div>
+</section>
+
+<ng-template #noView>
+  <h1 class="noview-title">Under development!</h1>
+</ng-template>

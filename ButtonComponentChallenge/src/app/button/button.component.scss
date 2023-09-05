@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700&display=swap');
+
+.btn {
+    color: #3F3F3F;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: 'Noto Sans JP', sans-serif;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #E0E0E0;
+    box-shadow: 0px 2px 3px 0px rgba(51, 51, 51, 0.20);
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &:hover, &:focus {
+        background-color: #AEAEAE;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    i {
+        font-size: 16px;
+    }
+}
+
+.outline {
+    color: #3D5AFE;
+    background-color: transparent;
+    border: 1px solid #3D5AFE;
+    box-shadow: none;
+
+    &:hover, &:focus {
+        background-color: rgba(41, 98, 255, 0.10);
+    }
+}
+
+.text {
+    color: #3D5AFE;
+    background-color: transparent !important;
+    box-shadow: none;
+
+    &:hover, &:focus {
+        background-color: rgba(41, 98, 255, 0.10);
+    }
+}
+
+.sm {
+    padding: 6px 12px;
+}
+
+.md {
+    padding: 8px 16px;
+}
+
+.lg {
+    padding: 11px 22px;
+}
+
+.primary, .secondary, .danger {
+    color: white;
+}
+
+.primary {
+    background: #2962FF;
+    box-shadow: 0px 2px 3px 0px rgba(41, 98, 255, 0.20);
+
+    &:hover, &:focus {
+        background-color: #0039CB;
+    }
+}
+
+.secondary {
+    background: #455A64;
+    box-shadow: 0px 2px 3px 0px rgba(69, 90, 100, 0.20);
+
+    &:hover, &:focus {
+        background-color: #1C313A;
+    }
+}
+
+.danger {
+    background-color: #D32F2F;
+    box-shadow: 0px 2px 3px 0px rgba(211, 47, 47, 0.20);
+
+    &:hover, &:focus {
+        background-color: #9A0007;
+    }
+}
+
+.disabled {
+    pointer-events: none;
+    background-color: #E0E0E0;
+    color: #9E9E9E;
+}

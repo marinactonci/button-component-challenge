@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+section {
+    display: flex;
+    min-height: 100vh;
+
+    .sidebar {
+        padding: 50px 60px;
+        background-color: #FAFBFD;
+
+        .title {
+            font-family: 'Poppins', sans-serif;
+            color: #090F31;
+            font-size: 13px;
+            margin-bottom: 120px;
+    
+            span {
+                color: #F7542E;
+            }
+        }
+    
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+    
+            .link {
+                display: flex;
+                justify-content: flex-start;
+                background-color: transparent;
+                border: none;
+                text-decoration: none;
+                color: #9E9E9E;
+                font-size: 14px;
+                font-family: 'Noto Sans JP', sans-serif;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .content-container {
+        width: 100%;
+        padding: 50px 80px;
+
+        .content {
+            .title {
+                font-family: 'Poppins', sans-serif;
+                font-weight: 500;
+                font-size: 24px;
+                margin-bottom: 30px;
+            }
+
+            .buttons {
+                display: flex;
+                flex-direction: column;
+                gap: 45px;
+
+                .btn-container {
+                    display: flex;
+                    align-items: center;
+    
+                    .btn {
+                        min-width: 220px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+label {
+    font-size: 12px;
+    color: #333333;
+    font-family: 'Ubuntu Mono', sans-serif;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.noview-title {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.active {
+    font-weight: 700;
+    color: #090F31 !important;
+}
+
+.icons {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Ubuntu Mono', sans-serif;
+    color: #828282;
+    margin-top: 50px;
+    margin-bottom: 35px;
+}
+
+.created-by {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #A9A9A9;
+
+    a {
+        font-weight: 700;
+
+        &:visited {
+           color:#A9A9A9;
+        }
+    }
+}
