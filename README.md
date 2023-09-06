@@ -63,5 +63,5 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## Contact
 
-- GitHub [@marinactonci](https://github.com/marinactonci)
+- GitHub [marinactonci](https://github.com/marinactonci)
 - LinkwsIn [Tonči Marinac](https://www.linkedin.com/in/marinactonci/)
