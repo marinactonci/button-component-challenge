@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap');
+
+.input-txt-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    label, .input-txt, .textarea {
+        font-family: 'Noto Sans JP', sans-serif;
+        color: #333333;
+    }
+
+    .helperText {
+        font-size: 10px;
+        color: #828282;
+    }
+
+    label {
+        font-size: 12px;
+        font-weight: 400;
+        transition: color 0.3s;
+    }
+
+    &:focus-within {
+        .label {
+            color: #2962FF;
+        }
+    }
+
+    .input-txt {
+        height: 56px;
+    }
+
+    .textarea {
+        padding: 12px;
+        resize: none;
+        height: auto;
+    }
+    
+    .input-txt, .textarea {
+        position: relative;
+        max-width: 200px;
+        border-radius: 8px;
+        border: 1px solid #828282;
+        padding-left: 12px;
+        font-size: 14px;
+        font-weight: 500;
+        transition: border-color 0.3s;
+    
+        &::placeholder {
+            color: #828282;
+            font-weight: 500;
+        }
+
+        &:hover {
+            border-color: #333;
+        }
+
+        &:focus {
+            outline: none;
+            border-color: #2962FF;
+        }
+    }
+}
+
+.error {
+    .label, .helperText {
+        color: #D32F2F;
+    }
+
+    &:focus-within {
+        .label {
+            color: #D32F2F !important;
+        }
+    }
+
+    &:hover {
+        .label {
+            color: #333;
+        }
+    }
+    
+    .input-txt, .textarea {
+        border-color: #D32F2F;
+
+        &:hover {
+            border-color: #333;
+        }
+
+        &:focus {
+            outline: none;
+            border-color: #D32F2F;
+        }
+    }
+}
+
+.disabled {
+    .input-txt {
+        pointer-events: none;
+        border-color: #E0E0E0;
+        background-color: #F2F2F2;
+    }
+}
+
+.sm {
+    height: 40px !important;
+}
+
+.hidden {
+    display: none;
+}
+
+.start-icon, .end-icon {
+    position: absolute;
+    top: 50%;
+    color: #828282;
+}
+
+.start-icon {
+    left: 12px;
+}
+
+.end-icon {
+    right: 96px
+}
+
+.pl-45 {
+    padding-left: 45px !important;
+}

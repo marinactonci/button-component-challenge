@@ -1,0 +1,15 @@
+<div class="input-txt-container">
+    <label for="text" class="label">Label</label>
+    <input type="text" name="text" id="text" 
+           class="input-txt" placeholder="Placeholder" [value]="value.length ? value: ''"
+           [ngClass]="{'sm': size === 'sm', 'pl-45': startIcon.length}">
+    <textarea class="textarea hidden" name="text" id="text" [rows]="row.length ? row: '3'"
+              placeholder="Placeholder" [value]="value.length ? value: ''"></textarea>
+    <label *ngIf="helperText.length" for="text" class="label helperText">Some interesting text</label>
+    <i *ngIf="startIcon.length" class="material-icons-round start-icon">
+        {{startIcon}}
+    </i>
+    <i *ngIf="endIcon.length" class="material-icons-round end-icon">
+        {{endIcon}}
+    </i>
+</div>

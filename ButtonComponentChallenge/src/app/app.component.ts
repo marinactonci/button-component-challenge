@@ -6,6 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  activeView: string = 'buttons';
-  title = 'ButtonComponentChallenge';
+  activeView: string = 'inputs';
 }

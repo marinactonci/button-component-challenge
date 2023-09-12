@@ -100,8 +100,84 @@
           </div>
         </div>
       </div>
-      <div *ngIf="activeView === 'inputs'">
+      <div *ngIf="activeView === 'inputs'" >
+        <h1 class="title">Inputs</h1>
+        <div class="buttons">
+          <div class="btn-container">
+            <div class="btn">
+              <label for="">&lt;Input /&gt;</label>
+              <app-input></app-input>
+            </div>
+          </div>
 
+          <div class="btn-container">
+            <div class="btn">
+              <label for="">&lt;Input error /&gt;</label>
+              <app-input error></app-input>
+            </div>
+          </div>
+
+          <div class="btn-container">
+            <div class="btn">
+              <label for="">&lt;Input disabled /&gt;</label>
+              <app-input disabled></app-input>
+            </div>
+          </div>
+
+          <div class="btn-container">
+            <div class="btn">
+              <label for="">&lt;Input helperText="Some interesting text" /&gt;</label>
+              <app-input helperText="Some interesting text"></app-input>
+            </div>
+            <div class="btn">
+              <label for="">&lt;Input helperText="Some interesting text" error /&gt;</label>
+              <app-input helperText="Some interesting text" error></app-input>
+            </div>
+          </div>
+
+          <div class="btn-container">
+            <div class="btn">
+              <label for="">&lt;Input startIcon="call" /&gt;</label>
+              <app-input startIcon="call"></app-input>
+            </div>
+            <div class="btn">
+              <label for="">&lt;Input endIcon="lock" /&gt;</label>
+              <app-input endIcon="lock"></app-input>
+            </div>
+          </div>
+
+          <div class="btn-container">
+            <div class="btn">
+              <label for="">&lt;Input value="Text" /&gt;</label>
+              <app-input value="Text"></app-input>
+            </div>
+          </div>
+
+          <div class="btn-container">
+            <div class="btn">
+              <label for="">&lt;Input size="sm" /&gt;</label>
+              <app-input size="sm"></app-input>
+            </div>
+            <div class="btn">
+              <label for="">&lt;Input size="md" /&gt;</label>
+              <app-input size="md"></app-input>
+            </div>
+          </div>
+
+          <div class="btn-container" style="width: 100%;">
+            <div class="btn" style="width: 100%;">
+              <label for="">&lt;Input fullWidth /&gt;</label>
+              <app-input fullWidth></app-input>
+            </div>
+          </div>
+
+          <div class="btn-container">
+            <div class="btn">
+              <label for="">&lt;Input multiline row="4" /&gt;</label>
+              <app-input multiline row="4"></app-input>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <p class="icons">Icons: https://material.io/resources/icons/?style=round</p>
